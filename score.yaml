@@ -13,9 +13,11 @@ containers:
   podinfo:
     image: . # Set by pipeline
     variables:
-      Hello: World
+      Hello: There
 
 resources:
+  cache:
+    type: redis
   dns: # We need a DNS record to point to the service 
     type: dns
   route:
