@@ -16,6 +16,9 @@ containers:
       Hello: There
 
 resources:
+  db:
+    type: mysql
+    class: mooseql
   cache:
     type: redis
   dns: # We need a DNS record to point to the service 
