@@ -16,6 +16,8 @@ containers:
       Hello: There
 
 resources:
+  db:
+    type: mysql
   cache:
     type: redis
   dns: # We need a DNS record to point to the service 
